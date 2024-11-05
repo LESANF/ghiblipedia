@@ -1,4 +1,11 @@
 {
   "name": "ghiblipedia-monorepo",
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.1",
+  "private": true,
+  "scripts": {
+    "front:dev": "yarn workspace @ghiblipedia/front dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
